@@ -1,0 +1,13 @@
+{
+  "name": "netlify-free-tier-agent-kit-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo project importing netlify-free-scraper as a submodule",
+  "type": "module",
+  "scripts": {
+    "deploy:preview": "netlify deploy --message 'agent-kit demo deploy'",
+    "scrape": "cd scraper && node cli/submit.mjs",
+    "status": "cd scraper && node cli/status.mjs",
+    "resume": "cd scraper && node cli/resume.mjs"
+  }
+}
